@@ -1,0 +1,154 @@
+html,body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-size: 16px;
+}
+p{
+    word-spacing: 4px;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #181818;
+    color: #FFFFFF;
+    font-size: medium;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: larger;
+    list-style: none;
+    height: 3rem;
+    width:100vw;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 50px;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s ease 0s;
+}
+.nav-links li a:hover{
+    text-shadow: 1px 1px 25px #fcba03;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #121212;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5rem;
+}
+.banner-text{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    animation-name: breathe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes breathe{
+    0%{text-shadow: 1px 1px 10px #f70505;}
+    20%{text-shadow: 1px 1px 10px #f76e05;}
+    40%{text-shadow: 1px 1px 10px #ebf705;}
+    60%{text-shadow: 1px 1px 10px #05f705;}
+    80%{text-shadow: 1px 1px 10px #0525f7;}
+    100%{text-shadow: 1px 1px 10px #8e05f7}
+    
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    background-color: #121212;
+    color: white;
+    height: 100vh;
+    width:100%;
+}
+.headers{
+   text-align: center;
+}
+.paragraphs{
+   text-align: center;
+}
+.button-border{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    box-shadow: none;
+    
+    
+    width: 400px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    
+
+}
+#enter{
+    color:#181818;
+    text-decoration: none;
+    background-color: #181818;
+    width: 390px;
+    height: 95px;
+    border-radius:50px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 75px;
+
+    animation-name: breathe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* might delete this */
+#enter:hover{
+    color:#181818;
+    animation-name: breathe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.button-border:hover{
+    animation-name: rgbackground;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rgbackground{
+    0%{background-color:  #f70505;
+        box-shadow: 0px 0px 75px 10px #f70505;}
+    20%{background-color:  #f76e05;
+        box-shadow: 0px 0px 50px 10px  #f76e05;}
+    40%{background-color:  #ebf705;
+        box-shadow: 0px 0px 75px 10px #ebf705;}
+    60%{background-color:  #05f705;
+        box-shadow: 0px 0px 50px 10px #05f705;}
+    80%{background-color:  #0525f7;
+        box-shadow: 0px 0px 75px 10px #0525f7;}
+    100%{background-color:  #8e05f7;
+        box-shadow: 0px 0px 50px 10px #8e05f7;}
+    
+}
+
+
+
